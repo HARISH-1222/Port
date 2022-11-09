@@ -13,11 +13,10 @@
     --border_colour: #0000;
     --box-shadow: black;
     --footer-background: #6363fc;
-
 }
 
 .dark_theme {
-    --first_background: rgb(21, 0, 54);
+    --first_background: rgb(32, 35, 56);
     --second_background: #6363fc;
     --font_color: white;
     --logo_color: white;
@@ -38,6 +37,10 @@ body {
     font-family: 'Trebuchet MS', sans-serif;
     background-color: var(--first_background);
     color: var(--font_color);
+}
+
+.form-background{
+    background-color: aqua;
 }
 
 #dark_icon {
@@ -164,7 +167,7 @@ nav ul li{
 .home_content {
     /* margin-bottom: 450px; */
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
 
 }
 
@@ -201,7 +204,6 @@ nav ul li{
 
 .skill_content {
     /* height: 100vh; */
-    width: 100vw;
     margin-bottom: 50px;
 }
 
@@ -513,6 +515,8 @@ nav ul li{
 }
 
 .contact {
+    display: grid;
+    place-items: center;
     margin-top: 50px;
 }
 
@@ -522,16 +526,23 @@ nav ul li{
 
 #contact_title {
     /* margin-top: 30%; */
-    text-align: center;
+    /* text-align: center; */
     padding-bottom: 15px;
 }
-
-.contact_form {
-    display: flex;
+.form-bg{
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100%;
+    min-height: 100%; */
+}
+
+.contact_form {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%; */
     /* background-color: antiquewhite; */
 }
 
@@ -566,7 +577,7 @@ textarea {
 .intput_data input {
     display: block;
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     border: none;
     font-size: inherit;
     font-family: inherit;
@@ -580,7 +591,7 @@ textarea {
     display: block;
     border: none;
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     font-size: 18px;
     font-family: inherit;
     padding: 15px 5px 0 5px;
@@ -622,8 +633,22 @@ textarea {
 }
 
 #btn {
-    padding: 10px;
+    padding-bottom: 35px;
+    text-align: center;
+    margin: 5px;
 }
+
+.btn-style{
+    background-color: var(--second_background);
+    padding: 10px 25px 10px 25px;
+    border-radius: 10px;
+    border:none ;
+}
+
+.btn-style:hover{
+    background-color: rgb(163, 163, 255);
+}
+
 
 /* #btn {
     font-size: 18px;
@@ -654,6 +679,18 @@ textarea {
     transform: scale(1.1);
 } */
 
+
+.form-bg{
+    /* border: 2px rgb(51, 34, 34); */
+    border: 2px solid var(--second_background);
+    width: 50%;
+    display: grid;
+    /* justify-content: center; */
+    place-items: center;
+    border-radius: 20px;
+}
+
+
 .footer {
     margin-top: 50px;
     font-weight: 400;
@@ -678,6 +715,7 @@ textarea {
     margin: 0 8px;
     opacity: 0.75;
     /*darkness*/
+    
 }
 
 .footer .social_link a:hover {

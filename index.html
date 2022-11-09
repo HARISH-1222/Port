@@ -6,6 +6,7 @@
     <title>HARISH</title>
     <link href="./style.css" rel="Stylesheet">
     <link href="css\all.min.css" rel="Stylesheet">
+    <link rel="icon" type="image/x-icon" href="./webfonts/hLogo.ico">
 </head>
 
 <body>
@@ -147,31 +148,32 @@
 
 
     <div class="contact">
+        <div class="form-bg">
         <div id="contact_title">
             <h1>Contact Me</h1>
         </div>
 
         <!-- <div class="contact_form"> -->
         <form class="contact_form" onsubmit="event.preventDefault(); validateForm()">
-            <div class="form_row">
-                <div class="intput_data">
-                    <input type="text" id="name">
-                    <lable>Name</lable>
-                    <small class="error"></small>
-                </div>
+                <div class="form_row">
+                    <div class="intput_data">
+                        <input type="text" id="name">
+                        <lable>Name</lable>
+                        <small class="error"></small>
+                    </div>
 
-                <div class="intput_data">
-                    <input type="text" id="mail_id">
-                    <lable>Mail ID</lable>
-                    <small class="error"></small>
-                </div>
+                    <div class="intput_data">
+                        <input type="text" id="mail_id">
+                        <lable>Mail ID</lable>
+                        <small class="error"></small>
+                    </div>
 
-                <div class="intput_data">
-                    <input type="text" id="purpose">
-                    <lable>Purpose</lable>
-                    <small class="error"></small>
+                    <div class="intput_data">
+                        <input type="text" id="purpose">
+                        <lable>Purpose</lable>
+                        <small class="error"></small>
+                    </div>
                 </div>
-            </div>
 
             <div class="form_row textarea">
                 <div class="intput_data">
@@ -184,8 +186,8 @@
             <!-- <a href="#" class="btn">Submit</a> -->
 
             <div id="btn">
-                <input type="submit" value="Send">
-
+                <!-- <input class="btn-style" type="submit" value="Send"> -->
+                <button type="submit" class="btn-style">Send</button>
             </div>
             <p id="success"></p>
 
@@ -193,7 +195,7 @@
         </form>
         <!-- </div> -->
     </div>
-
+</div>
     <footer class="footer">
         <div class="footer_content">
             <div class="social_link">
