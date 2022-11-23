@@ -54,6 +54,8 @@ body {
 }
 
 nav ul {
+    /* display: inline-block;
+    position: relative; */
     flex: 1;
     text-align: right;
 }
@@ -171,6 +173,7 @@ nav ul li{
 
 }
 
+
 #Home {
     padding: 40vh 50% 0 8%;
 }
@@ -194,7 +197,7 @@ nav ul li{
 }
 
 #Home p {
-    font-size: 1.5vmax;
+    font-size: 1.2vmax;
     text-align: center;
     font-weight: 100;
     color: var(--font_color);
@@ -446,76 +449,6 @@ nav ul li{
     font-weight: 100;
     margin-bottom: 10px;
     letter-spacing: 2px;
-}
-
-@media only screen and (min-width: 768px) {
-    .quali_timeline::before {
-        /*margin-top: %;  */
-        content: '';
-        position: absolute;
-        transform: translateX(-50%);
-        height: 100%;
-        width: 2px;
-        left: 50%;
-        /* background-color: var(--font_color); */
-        background-color: var(--font_color);
-    }
-
-    .quali_timeline {
-        margin-top: 7%;
-        margin-bottom: 0;
-    }
-
-    .quali_timeline ul li {
-        /* padding: 100px 0; */
-        width: 50%;
-        margin-bottom: 50px;
-        /* position: relative; */
-    }
-
-    .quali_timeline ul li:nth-child(odd) {
-        float: left;
-        clear: right;
-        transform: translateX(-30px);
-        border-radius: 10px 0px 10px 10px;
-    }
-
-    .quali_timeline ul li:nth-child(even) {
-        float: right;
-        clear: left;
-        transform: translateX(30px);
-        border-radius: 0px 10px 10px 10px;
-    }
-
-    .quali_timeline ul li::after {
-        content: '';
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        background-color: var(--font_color);
-        border-radius: 50%;
-        top: 0;
-    }
-
-    .quali_timeline ul li:nth-child(odd)::after {
-        transform: translate(50%, -50%);
-        right: -30px;
-    }
-
-    .quali_timeline ul li:nth-child(even)::after {
-        transform: translate(-50%, -50%);
-        left: -30px;
-    }
-
-    .quali_timeline ul li:hover::after {
-        background-color: var(--second_background);
-    }
-
-    .timeline_content .date {
-
-        position: absolute;
-        top: -30px;
-    }
 }
 
 .contact {
@@ -806,3 +739,95 @@ p {
     line-height: 40px;
     font-size: 20px;
 }
+
+
+/* Media Query */
+
+@media only screen and (min-width: 768px) {
+    .quali_timeline::before {
+        /*margin-top: %;  */
+        content: '';
+        position: absolute;
+        transform: translateX(-50%);
+        height: 100%;
+        width: 2px;
+        left: 50%;
+        /* background-color: var(--font_color); */
+        background-color: var(--font_color);
+    }
+
+    .quali_timeline {
+        margin-top: 7%;
+        margin-bottom: 0;
+    }
+
+    .quali_timeline ul li {
+        /* padding: 100px 0; */
+        width: 50%;
+        margin-bottom: 50px;
+        /* position: relative; */
+    }
+
+    .quali_timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 10px 0px 10px 10px;
+    }
+
+    .quali_timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 10px 10px 10px;
+    }
+
+    .quali_timeline ul li::after {
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: var(--font_color);
+        border-radius: 50%;
+        top: 0;
+    }
+
+    .quali_timeline ul li:nth-child(odd)::after {
+        transform: translate(50%, -50%);
+        right: -30px;
+    }
+
+    .quali_timeline ul li:nth-child(even)::after {
+        transform: translate(-50%, -50%);
+        left: -30px;
+    }
+
+    .quali_timeline ul li:hover::after {
+        background-color: var(--second_background);
+    }
+
+    .timeline_content .date {
+
+        position: absolute;
+        top: -30px;
+    }
+}
+
+/* @media (max-width:500px){
+    body{
+        background-color: antiquewhite;
+    }
+} */
+
+.font-media{
+    color: #6363fc;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+/* @media (max-width:900px){
+    #sanvagIcon{
+        display :block;
+    }
+} */
